@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chhat Puja</title>
+    <link
+      rel="shortcut icon"
+      href="./images/images.jpg"
+      type="image/x-icon"
+      style="border-radius: 50px"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- Video tag mein id="bgVideo" aur muted hona zaroori hai taaki autoplay chale -->
+      <video class="bg-video" autoplay muted loop playsinline id="bgVideo">
+        <source src="./images/chhat puja.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Sound enable karne ke liye button -->
+      <div id="soundPrompt">
+        <button id="enableSoundBtn">🔊 Click to Play with Sound</button>
+      </div>
+
+      <div class="overlay">
+        <div class="title" style="font-size: 20px">
+          आ रहा है महा छठ पर्व! 🌅<br />
+          ये सिर्फ एक त्योहार नहीं, हमारी आस्था है, हमारा पहला प्यार है,<br />
+          ये हमारी मन्नत है, और हमारी जन्नत है! 🙏 <br /> <br>
+          छठ पूजा की हार्दिक शुभकामनाएँ! 🙏🌼
+        </div>
+        <div class="title" id="end-date">22 December 2026 11:00 AM</div>
+        <div class="col">
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Days</label>
+          </div>
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Hours</label>
+          </div>
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Minutes</label>
+          </div>
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Seconds</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
